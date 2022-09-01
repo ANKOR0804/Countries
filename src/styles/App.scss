@@ -1,0 +1,246 @@
+@import '~bootstrap/scss/bootstrap';
+@import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.light-theme {
+  .navbar {
+    background-color: $white;
+
+    &-brand {
+      color: $very-dark-blue-light;
+    }
+  }
+
+  .section-country-board {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: $very-light-gray;
+
+    .input-group {
+      border-radius: 5px;
+      box-shadow: $box-shadow;
+
+      &-text {
+        background: $white;
+        border: none;
+      }
+
+      .form-control {
+        border: none;
+        color: $dark-gray;
+
+        &::placeholder {
+          color: $dark-gray;
+        }
+
+        &:focus {
+          box-shadow: unset;
+        }
+      }
+    }
+
+    .filter {
+      &__toggle {
+        background: $white;
+        color: $dark-gray;
+      }
+    }
+
+    .card {
+      &-body {
+        background-color: $white;
+        color: $very-dark-blue-light;
+      }
+    }
+  }
+
+  .section-country-card {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: $very-light-gray;
+    color: $very-dark-blue-light;
+  }
+
+  .button-nav {
+    background-color: $white;
+    color: $very-dark-blue-light;
+  }
+}
+
+.dark-theme {
+  .navbar {
+    background-color: $dark-blue;
+
+    &-brand {
+      color: $white;
+    }
+
+    .btn-switch-theme {
+      color: $white;
+    }
+  }
+
+  .section-country-board {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: $very-dark-blue;
+
+    .input-group {
+      border-right: 5px;
+      box-shadow: $box-shadow;
+
+      &-text {
+        background: $dark-blue;
+        border: none;
+
+        svg {
+          color: $white;
+        }
+      }
+
+      .form-control {
+        background: $dark-blue;
+        border: none;
+        color: $white;
+
+        &::placeholder {
+          color: white;
+        }
+
+        &:focus {
+          box-shadow: unset;
+        }
+      }
+    }
+
+    .filter {
+      &__toggle {
+        background: $dark-blue;
+        color: $white;
+      }
+
+      &__menu {
+        background: $dark-blue;
+
+        a {
+          color: $white;
+
+          &:hover {
+            background: $very-dark-blue;
+          }
+
+          &:active {
+            background: $very-dark-blue-light;
+          }
+        }
+      }
+    }
+
+    .card {
+      &-body {
+        background-color: $dark-blue;
+        color: $white;
+      }
+    }
+  }
+
+  .section-country-card {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: $very-dark-blue;
+    color: $white;
+  }
+
+  .button-nav {
+    background-color: $dark-blue;
+    color: $white;
+  }
+}
+
+.btn {
+  &-white {
+    background: #fff;
+    border: none;
+  }
+}
+
+.card {
+  border: none;
+  cursor: pointer;
+  background: unset;
+  box-shadow: $box-shadow;
+  transition: $transition;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &__image {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+.filter {
+  &__toggle {
+    box-shadow: $box-shadow;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    border: none;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menu {
+    width: 100%;
+  }
+}
+
+.btn-switch-theme {
+  background: transparent;
+  border: none;
+
+  &:focus {
+    box-shadow: none;
+    border: none;
+    background: unset;
+  }
+
+  &:hover {
+    background-color: unset;
+    outline: 0;
+    box-shadow: var(--bs-btn-focus-box-shadow);
+  }
+}
+
+.list-group {
+  &-item {
+    padding-left: 0;
+    background: transparent;
+    border-bottom: 0;
+    padding-bottom: 0;
+    color: inherit;
+
+    &:last-child {
+      margin-bottom: 10px;
+    }
+  }
+}
+

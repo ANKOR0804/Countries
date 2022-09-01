@@ -1,0 +1,19 @@
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1440px
+);
+
+$dark-blue: rgba(43, 57, 69, 1); // Dark Mode Elements
+$very-dark-blue: rgba(32, 44, 55, 1); // Dark Mode Background
+$very-dark-blue-light: rgba(17, 21, 23, 1); // Light Mode Text
+$dark-gray: rgba(133, 133, 133, 1); // Light Mode Input
+$very-light-gray: rgba(250, 250, 250, 1); // Light Mode Background
+$white: rgba(255, 255, 255, 1); // Dark Mode Text & Light Mode Elements
+
+$box-shadow: rgba(0, 0, 0, 0.16) 1px 1px 8px 2px;
+$box-shadow-dark: $very-dark-blue 1px 1px 8px 2px;
+
+$transition: all .2s ease-in-out;
